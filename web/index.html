@@ -8,6 +8,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <mh1>Les 1</mh1>
+    <h1 id="rawr">rawr</h1>
+    <p id="mkBlauw">maak achtergrond blauw</p>
+    <p id="mkGroen">maak achtergrond groen</p>
+
+    <script>
+        const rawr = document.getElementById("rawr")
+        const mkBlauw = document.getElementById('mkBlauw');
+        const mkGroen = document.getElementById('mkGroen')
+
+        rawr.style.backgroundColor = "red"
+
+        rawr.addEventListener('click', voeruitRawr);
+        mkBlauw.addEventListener('click', voeruitBlauw)
+        mkGroen.addEventListener('click', voeruitGroen)
+
+        function voeruitRawr(){
+            rawr.style.backgroundColor = "white";
+            rawr.style.color = "black";
+        }
+
+        function voeruitBlauw(){
+            document.body.style.backgroundColor = "blue";
+            document.body.style.color = "white";
+            rawr.style.backgroundColor = "white";
+            rawr.style.color = "black";
+
+        
+        }
+
+        function voeruitGroen(){
+            document.body.style.backgroundColor = "yellow"
+            document.body.style.color = "brown"
+        }
+    </script>
+
+
 </body>
 </html>
