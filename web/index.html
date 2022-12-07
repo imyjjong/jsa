@@ -7,40 +7,80 @@
     <title>Mijn JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1 id="rawr">rawr</h1>
-    <p id="mkBlauw">maak achtergrond blauw</p>
-    <p id="mkGroen">maak achtergrond groen</p>
+    <p id="mkRood">Maak achtergrond rood</p>
+    <p id="mkOranje">Maak achtergrond oranje</p>
+    <p id="mkGeel">Maak achtergrond geel</p>
+    <p id="mkGroen">Maak achtergrond groen</p>
+    <p id="mkBlauw">Maak achtergrond blauw</p>
+    <p id="mkRoze">Maak achtergrond roze</p>
+    <p id="mkPaars">Maak achtergrond paars</p>
 
     <script>
-        const rawr = document.getElementById("rawr")
+        const rawr = document.getElementById("rawr");
+        const mkRood = document.getElementById('mkRood');
+        const mkOranje = document.getElementById('mkOranje');
+        const mkGeel = document.getElementById('mkGeel');
+        const mkGroen = document.getElementById('mkGroen');
         const mkBlauw = document.getElementById('mkBlauw');
-        const mkGroen = document.getElementById('mkGroen')
+        const mkRoze = document.getElementById('mkRoze');
+        const mkPaars = document.getElementById('mkPaars');
 
-        rawr.style.backgroundColor = "red"
+        rawr.style.backgroundColor = "red";
 
         rawr.addEventListener('click', voeruitRawr);
-        mkBlauw.addEventListener('click', voeruitBlauw)
-        mkGroen.addEventListener('click', voeruitGroen)
+        mkRood.addEventListener('click', voeruitRood);
+        mkOranje.addEventListener('click', voeruitOranje);
+        mkGeel.addEventListener('click', voeruitGeel);
+        mkGroen.addEventListener('click', voeruitGroen);
+        mkBlauw.addEventListener('click', voeruitBlauw);
+        mkRoze.addEventListener('click', voeruitRoze);
+        mkPaars.addEventListener('click', voeruitPaars);
 
         function voeruitRawr(){
             rawr.style.backgroundColor = "white";
             rawr.style.color = "black";
         }
 
-        function voeruitBlauw(){
-            document.body.style.backgroundColor = "blue";
+        function voeruitRood(){
+            document.body.style.backgroundColor = "red";
             document.body.style.color = "white";
             rawr.style.backgroundColor = "white";
             rawr.style.color = "black";
+        }
 
-        
+        function voeruitOranje(){
+            document.body.style.backgroundColor = "orange";
+            document.body.style.color = "brown";
+        }
+
+        function voeruitGeel(){
+            document.body.style.backgroundColor = "yellow";
+            document.body.style.color = "blue";
         }
 
         function voeruitGroen(){
-            document.body.style.backgroundColor = "yellow"
-            document.body.style.color = "brown"
+            document.body.style.backgroundColor = "green";
+            document.body.style.color = "black";
         }
+
+        function voeruitBlauw(){
+            document.body.style.backgroundColor = "blue";
+            document.body.style.color = "white";
+        }
+
+        function voeruitRoze(){
+            document.body.style.backgroundColor = "pink";
+            document.body.style.color = "blue"
+        }
+
+        function voeruitPaars(){
+            document.body.style.backgroundColor = "purple"
+            document.body.style.color = "white"
+        }
+
     </script>
 
 
